@@ -16,7 +16,7 @@
  * You should have received a copy of the GNU General Public License
  * along with Graylog.  If not, see <http://www.gnu.org/licenses/>.
  */
-package org.graylog2.alarmcallbacks.twilio;
+package org.graylog2.alarmcallbacks.awssns;
 
 import org.graylog2.plugin.PluginMetaData;
 import org.graylog2.plugin.ServerStatus;
@@ -26,15 +26,15 @@ import java.net.URI;
 import java.util.Collections;
 import java.util.Set;
 
-public class TwilioSmsAlarmCallbackMetadata implements PluginMetaData {
+public class AWSSNSAlarmCallbackMetadata implements PluginMetaData {
     @Override
     public String getUniqueId() {
-        return TwilioSmsAlarmCallback.class.getCanonicalName();
+        return AWSSNSAlarmCallback.class.getCanonicalName();
     }
 
     @Override
     public String getName() {
-        return "Twilio SMS Alarmcallback Plugin";
+        return "AWS SNS Alarm Callback Plugin";
     }
 
     @Override
@@ -54,7 +54,7 @@ public class TwilioSmsAlarmCallbackMetadata implements PluginMetaData {
 
     @Override
     public String getDescription() {
-        return "Alarm callback plugin that sends all stream alerts as SMS to a defined phone number.";
+        return "Alarm callback plugin that sends stream alerts as messages to a defined AWS SNS topic or a phone number.";
     }
 
     @Override

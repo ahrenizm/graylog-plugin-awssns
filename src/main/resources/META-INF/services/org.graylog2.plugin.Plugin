@@ -1,1 +1,1 @@
-org.graylog2.alarmcallbacks.twilio.TwilioSmsAlarmCallbackPlugin
+org.graylog2.alarmcallbacks.awssns.AWSSNSAlarmCallbackPlugin

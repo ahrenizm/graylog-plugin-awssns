@@ -5,12 +5,12 @@
     </prerequisites>
 
     <groupId>org.graylog.plugins</groupId>
-    <artifactId>graylog-plugin-twiliosms</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <artifactId>graylog-plugin-awssns</artifactId>
+    <version>0.0.1</version>
     <packaging>jar</packaging>
 
-    <name>graylog-plugin-twiliosms</name>
-    <description>Graylog Twilio SMS Alarmcallback plugin</description>
+    <name>graylog-plugin-awssns</name>
+    <description>Graylog AWS SNS Alarmcallback plugin</description>
     <url>https://www.graylog.org</url>
 
     <licenses>
@@ -21,9 +21,9 @@
     </licenses>
 
     <scm>
-        <connection>scm:git:git@github.com:Graylog2/graylog-plugin-twiliosms.git</connection>
-        <developerConnection>scm:git:git@github.com:Graylog2/graylog-plugin-twiliosms.git</developerConnection>
-        <url>https://github.com/Graylog2/graylog-plugin-twiliosms</url>
+        <connection>scm:git:git@github.com:alesz/graylog-plugin-awssns.git</connection>
+        <developerConnection>scm:git:git@github.com:alesz/graylog-plugin-awssns.git</developerConnection>
+        <url>https://github.com/alesz/graylog-plugin-awssns</url>
         <tag>HEAD</tag>
     </scm>
 
@@ -46,9 +46,9 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>com.twilio.sdk</groupId>
-            <artifactId>twilio-java-sdk</artifactId>
-            <version>6.3.0</version>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>aws-java-sdk-sns</artifactId>
+            <version>1.11.285</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
